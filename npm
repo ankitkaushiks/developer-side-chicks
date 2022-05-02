@@ -1,0 +1,41 @@
+Npm 
+Its node pakage manager.
+Install node on you Pc : https://nodejs.org/en/download/
+After that you will need to open a terminal , it can be cmd line, gitbash or vs code terminnal. 
+just make sure the terminal is working on your current directory. 
+ NPM crash course by Travesy media :   https://www.youtube.com/watch?v=jHDhaSSKmB0
+ Here are the most used and basic commands.
+ format:   npm command : what it does. 
+ 1.. npm -v                                          : check the version of npm.
+ 2.. npm                                             : help 
+ 3.. npm init                                        : initilise the npm in your project.(you will ask some question, it creat a                                                              pakages.json
+                                                       file which contains the important information of your project. pakage.json can                                                          be copied  to another project and when you use "npm init" it willl download the                                                        required pakages. 
+   npm init -y
+  [ ] npm  config  set   init-randomParameter-itsSubtype "ValueYouWantToSet" : it  change the typed value in pakages.json on next init. 
+- [ ] npm  config  get  init-randomParameter         : it will return the value of the  field.
+- [ ] npm  config   delete   randomfieldname         : it wil delete that parameter.
+- [ ] npm install   randomPakagesName  --save        : it will instal that package but will not save in pakages.json
+- [ ] const  _  =  require("randomPakagesName")      : using  a library in .js file ( you can use any other name in the place of underscore)
+- [ ] --save                                         : will save it in pakages.json for future use (like transfer, git, etc.)
+- [ ] npm install                                    : when you have a  pakages.json file it will install the required  pakages 
+- [ ] --save-dev                                     : will save the save the pakages as dev dependadies.
+- [ ] --production                                                                          this flag will only add the dependies. 
+- [ ] uninstall , remove,rm,un                       : uninstall the pakagess
+- [ ] npm install randomPakages@4.4.9                : randompakages at version 4.4.9 will be installed         
+- [ ] ^4.4.3                                                                                         when reinstalled this will install the latest minor version
+- [ ] ~4.4.3                                         : install latest patch version.
+- [ ] 4.4.3                                          : install this version           
+- [ ] *                                              : absolute latest version.
+- [ ] -g                                             : flag to install pakages globally
+- [ ] npm root -g                                    : show you the folder where global pakages are.
+- [ ] npm install live-server -g                     : install live server globally
+- [ ] live-server                                    : open live server. (or show directory to open mannualy if index.html missing. 
+- [ ] npm list                                       : get you all the list of packages in your project. 
+- [ ] npm list --depth 0                             : get you all the list of packages but with depth 0 (only uppermost files.)
+- 
+-----------------------------------------------------SCRIPTS
+- [ ]                                                they are listed in packages.json where you can add your own script  for better                                                          workflow. 
+- [ ] "start":"node index.js" (npm start)            : will run your application 
+- [ ] ------------------------------------------------install pakages locally to work with script
+------------------------------------------------------script need "run"  before their name to excute
+- [ ] "server":"live-server" (npm run server)        : will run the live-server pakges. (need RUN cmd)
